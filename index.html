@@ -12,7 +12,7 @@
   <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
   <div class="container-fluid">
     <!-- Brand on the left -->
-    <a class="navbar-brand fw-bold" href="#">Navbar</a>
+    <a class="navbar-brand fw-bold" href="#"></a>
 
     <!-- Hamburger menu button -->
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
@@ -27,12 +27,19 @@
           <a class="nav-link active" aria-current="page" href="#about">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#projects">projects</a>
+          <a class="nav-link" href="#skills">Skills</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#experience">Experience</a>
         </li>
         
+      
       </ul>
     </div>
   </div>
@@ -154,27 +161,29 @@
     </p>
   </div>
 </section>
-<section id="random-color-generator" style="padding-top: 20px;">
-  <h4>
-    <a href="https://streamcrypt.github.io/random-color-generator/" class="no-style" target="_blank" rel="noopener noreferrer">
-      Random Color Generator Project – HTML, CSS, JavaScript
-    </a>
-  </h4>
+<section id="projects" class="projects py-5 bg-white">
+  <div class="container">
+    <div class="project2 mb-4">
+      <h3 class="mb-3">
+        <a href="#projects-2" id="projects-2" class="text-decoration-none text-primary">
+          Random Color Generator — HTML, CSS, JavaScript
+        </a>
+      </h3>
+      <p class="description fs-5 text-secondary">
+        Let's create a tool that generates multiple random colors and codes with JavaScript. Upon refreshing the page, the colors and codes change randomly for up to 30 color containers.
+        The website is designed to be responsive, adapting to different screen sizes: four columns on large screens, down to one column on mobile. This ensures a seamless experience on any device.
+      </p>
+      <p class="fs-6">Here are some screenshots of the generator in action:</p>
+    </div>
 
-  <p class="description">
-    This project features a dynamic tool that generates up to 30 unique random colors using JavaScript. Each time the page is refreshed, a new set of colors and their hexadecimal codes are displayed. The layout is fully responsive — color blocks are arranged in four columns on larger screens, scaling down to three, two, and then a single column on smaller devices to ensure optimal usability across all screen sizes.
-  </p>
-
-  <p style="padding-bottom: 5px;">Here are some screenshots showcasing the project in action:</p>
-
-  <div class="project-details">
-    <div id="carouselRandomColor" class="carousel slide" data-bs-ride="carousel">
+    <!-- Bootstrap Carousel -->
+    <div id="carouselExampleIndicators" class="carousel slide mb-5" data-bs-ride="carousel">
       <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselRandomColor" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselRandomColor" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselRandomColor" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
       </div>
-      <div class="carousel-inner">
+      <div class="carousel-inner rounded shadow-sm">
         <div class="carousel-item active">
           <img src="https://i.imgur.com/7IczQXN.png" class="d-block w-100" alt="Random Color Generator Screenshot 1">
         </div>
@@ -185,57 +194,235 @@
           <img src="https://i.imgur.com/V2win1M.png" class="d-block w-100" alt="Random Color Generator Screenshot 3">
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselRandomColor" data-bs-slide="prev">
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
       </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselRandomColor" data-bs-slide="next">
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
     </div>
 
-    <h5 style="padding-top: 25px;">Technologies Used</h5>
-    <ul>
-      <li><strong>HTML5</strong> – Provided the foundational structure of the webpage.</li>
-      <li><strong>CSS3</strong> – Styled the layout and elements with a clean, modern look.</li>
-      <li><strong>JavaScript</strong> – Generated and displayed the random color codes dynamically.</li>
-    </ul>
+    <!-- Technologies Used -->
+    <div class="technologies mb-4">
+      <h4 class="mb-3 text-primary">Technologies Used</h4>
+      <ul class="list-inline">
+        <li class="list-inline-item badge bg-secondary mx-1 py-2 px-3">HTML5</li>
+        <li class="list-inline-item badge bg-secondary mx-1 py-2 px-3">CSS3</li>
+        <li class="list-inline-item badge bg-secondary mx-1 py-2 px-3">JavaScript</li>
+        <li class="list-inline-item badge bg-secondary mx-1 py-2 px-3">Responsive Design</li>
+      </ul>
+    </div>
 
-    <h5>Role and Contributions</h5>
-    <ul>
-      <li><strong>Front-End Development:</strong> Designed and built the HTML structure and used CSS to ensure a clean and visually pleasing layout.</li>
-      <li><strong>Responsive Layout:</strong> Implemented responsive design using CSS media queries for optimal display on desktops, tablets, and mobile devices.</li>
-      <li><strong>JavaScript Logic:</strong> Developed functions to generate random hex codes and apply them to each container dynamically.</li>
-      <li><strong>User Experience:</strong> Ensured that each color block displays its corresponding code for easy reference and usability.</li>
-    </ul>
+    <!-- Roles and Contributions -->
+    <div class="roles-and-contributions mb-4">
+      <h4 class="mb-3 text-primary">Roles and Contributions</h4>
+      <ul>
+        <li>Developed the HTML structure and CSS layout for the color containers.</li>
+        <li>Used CSS media queries to build a responsive grid layout.</li>
+        <li>Created JavaScript functions to generate and apply random hex colors on page load.</li>
+        <li>Displayed the hex code below each color for clarity and usability.</li>
+      </ul>
+    </div>
+     <section id="skills">
+    <h4>My Technical skills</h4>
+    <h5>Frontend</h5>
+   <div class="skillstats1">
+    <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" color="red" fill="currentColor" class="bi bi-filetype-html" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M14 4.5V11h-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5zm-9.736 7.35v3.999h-.791v-1.714H1.79v1.714H1V11.85h.791v1.626h1.682V11.85h.79Zm2.251.662v3.337h-.794v-3.337H4.588v-.662h3.064v.662zm2.176 3.337v-2.66h.038l.952 2.159h.516l.946-2.16h.038v2.661h.715V11.85h-.8l-1.14 2.596H9.93L8.79 11.85h-.805v3.999zm4.71-.674h1.696v.674H12.61V11.85h.79v3.325Z"/>
+    </svg>
+    <div class="progress" role="progressbar"  aria-label="danger" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+      <div class="progress-bar text-bg-danger" style="width: 75%" >75%</div>
+    </div>
+   </div>
 
-    <br>
-    <p>
-      Try out the <a href="https://streamcrypt.github.io/random-color-generator/" target="_blank" rel="noopener noreferrer">Random Color Generator</a> live or dive into the <a href="https://github.com/streamcrypt/random-color-generator" target="_blank" rel="noopener noreferrer">GitHub repository</a> to explore the codebase in detail.
-    </p>
+   <div class="skillstats2">
+
+    <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" color="orange" fill="currentColor" class="bi bi-filetype-css" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M14 4.5V14a2 2 0 0 1-2 2h-1v-1h1a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5zM3.397 14.841a1.13 1.13 0 0 0 .401.823q.195.162.478.252.284.091.665.091.507 0 .859-.158.354-.158.539-.44.187-.284.187-.656 0-.336-.134-.56a1 1 0 0 0-.375-.357 2 2 0 0 0-.566-.21l-.621-.144a1 1 0 0 1-.404-.176.37.37 0 0 1-.144-.299q0-.234.185-.384.188-.152.512-.152.214 0 .37.068a.6.6 0 0 1 .246.181.56.56 0 0 1 .12.258h.75a1.1 1.1 0 0 0-.2-.566 1.2 1.2 0 0 0-.5-.41 1.8 1.8 0 0 0-.78-.152q-.439 0-.776.15-.337.149-.527.421-.19.273-.19.639 0 .302.122.524.124.223.352.367.228.143.539.213l.618.144q.31.073.463.193a.39.39 0 0 1 .152.326.5.5 0 0 1-.085.29.56.56 0 0 1-.255.193q-.167.07-.413.07-.175 0-.32-.04a.8.8 0 0 1-.248-.115.58.58 0 0 1-.255-.384zM.806 13.693q0-.373.102-.633a.87.87 0 0 1 .302-.399.8.8 0 0 1 .475-.137q.225 0 .398.097a.7.7 0 0 1 .272.26.85.85 0 0 1 .12.381h.765v-.072a1.33 1.33 0 0 0-.466-.964 1.4 1.4 0 0 0-.489-.272 1.8 1.8 0 0 0-.606-.097q-.534 0-.911.223-.375.222-.572.632-.195.41-.196.979v.498q0 .568.193.976.197.407.572.626.375.217.914.217.439 0 .785-.164t.55-.454a1.27 1.27 0 0 0 .226-.674v-.076h-.764a.8.8 0 0 1-.118.363.7.7 0 0 1-.272.25.9.9 0 0 1-.401.087.85.85 0 0 1-.478-.132.83.83 0 0 1-.299-.392 1.7 1.7 0 0 1-.102-.627zM6.78 15.29a1.2 1.2 0 0 1-.111-.449h.764a.58.58 0 0 0 .255.384q.106.073.25.114.142.041.319.041.245 0 .413-.07a.56.56 0 0 0 .255-.193.5.5 0 0 0 .085-.29.39.39 0 0 0-.153-.326q-.152-.12-.463-.193l-.618-.143a1.7 1.7 0 0 1-.539-.214 1 1 0 0 1-.351-.367 1.1 1.1 0 0 1-.123-.524q0-.366.19-.639.19-.272.527-.422t.777-.149q.456 0 .779.152.326.153.5.41.18.255.2.566h-.75a.56.56 0 0 0-.12-.258.6.6 0 0 0-.246-.181.9.9 0 0 0-.37-.068q-.324 0-.512.152a.47.47 0 0 0-.184.384q0 .18.143.3a1 1 0 0 0 .404.175l.621.143q.326.075.566.211t.375.358.135.56q0 .37-.188.656a1.2 1.2 0 0 1-.539.439q-.351.158-.858.158-.381 0-.665-.09a1.4 1.4 0 0 1-.478-.252 1.1 1.1 0 0 1-.29-.375"/>
+    </svg>
+    <div class="progress" role="progressbar" aria-label="warning" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+      <div class="progress-bar text-bg-warning" style="width: 50%">50%</div>
+    </div>
+</div>
+<div class="skillstats3">
+      <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" color="green" fill="currentColor" class="bi bi-filetype-js" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M14 4.5V14a2 2 0 0 1-2 2H8v-1h4a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5zM3.186 15.29a1.2 1.2 0 0 1-.111-.449h.765a.58.58 0 0 0 .255.384q.105.073.249.114.143.041.319.041.246 0 .413-.07a.56.56 0 0 0 .255-.193.5.5 0 0 0 .085-.29.39.39 0 0 0-.153-.326q-.151-.12-.462-.193l-.619-.143a1.7 1.7 0 0 1-.539-.214 1 1 0 0 1-.351-.367 1.1 1.1 0 0 1-.123-.524q0-.366.19-.639.19-.272.528-.422.336-.15.776-.149.457 0 .78.152.324.153.5.41.18.255.2.566h-.75a.56.56 0 0 0-.12-.258.6.6 0 0 0-.247-.181.9.9 0 0 0-.369-.068q-.325 0-.513.152a.47.47 0 0 0-.184.384q0 .18.143.3a1 1 0 0 0 .405.175l.62.143q.327.075.566.211.24.136.375.358t.135.56q0 .37-.188.656a1.2 1.2 0 0 1-.539.439q-.351.158-.858.158-.381 0-.665-.09a1.4 1.4 0 0 1-.478-.252 1.1 1.1 0 0 1-.29-.375m-3.104-.033A1.3 1.3 0 0 1 0 14.791h.765a.6.6 0 0 0 .073.27.5.5 0 0 0 .454.246q.285 0 .422-.164.138-.165.138-.466v-2.745h.79v2.725q0 .66-.357 1.005-.354.345-.984.345a1.6 1.6 0 0 1-.569-.094 1.15 1.15 0 0 1-.407-.266 1.1 1.1 0 0 1-.243-.39"/>
+    </svg>
+    <div class="progress" role="progressbar" aria-label="Success" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+      <div class="progress-bar text-bg-success" style="width: 25%">25%</div>
+    </div>
+  </div>
+     <div class="design tools">
+        <h5>Design tools</h5>
+        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35"color="#0dcaf0" fill="currentColor" class="bi bi-palette" viewBox="0 0 16 16">
+          <path d="M8 5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3m4 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3M5.5 7a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m.5 6a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/>
+          <path d="M16 8c0 3.15-1.866 2.585-3.567 2.07C11.42 9.763 10.465 9.473 10 10c-.603.683-.475 1.819-.351 2.92C9.826 14.495 9.996 16 8 16a8 8 0 1 1 8-8m-8 7c.611 0 .654-.171.655-.176.078-.146.124-.464.07-1.119-.014-.168-.037-.37-.061-.591-.052-.464-.112-1.005-.118-1.462-.01-.707.083-1.61.704-2.314.369-.417.845-.578 1.272-.618.404-.038.812.026 1.16.104.343.077.702.186 1.025.284l.028.008c.346.105.658.199.953.266.653.148.904.083.991.024C14.717 9.38 15 9.161 15 8a7 7 0 1 0-7 7"/>
+        </svg>
+        <div style="font-size: 0.75rem; color:#0dcaf0;">Figma</div>
+</div>
+    <div class="progress" role="progressbar" aria-label="Info" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+      <div class="progress-bar text-bg-info" style="width: 65%">65%</div>
+    </div>
+  </div>
+  <br>
+    
+ <!-- Role-specific Strength -->
+<div class="role-strength mb-4" style="padding-left: 63px;">
+  <h4 class="mb-3 text-primary">Role-specific Strength</h4>
+
+  <div class="mb-3">
+    <h5 class="mb-2 text-secondary">Frontend Development</h5>
+    <ul>
+      <li><strong>HTML5</strong> – Semantic markup for modern web</li>
+      <li><strong>CSS3</strong> – Responsive layouts & animations</li>
+      <li><strong>JavaScript (ES6+)</strong> – Core logic and DOM manipulation</li>
+      <li><strong>React.js</strong> – Component-based architecture</li>
+    </ul>
+  </div>
+
+  <div class="mb-3">
+    <h5 class="mb-2 text-secondary">Design Tools</h5>
+    <ul>
+      <li>Figma – UI/UX prototyping</li>
+      <li>Adobe XD – Interface design</li>
+    </ul>
+  </div>
+
+  <div class="mb-3">
+    <h5 class="mb-2 text-secondary">Version Control</h5>
+    <ul>
+      <li>Git – Branching and collaboration</li>
+      <li>GitHub – Remote repositories and project management</li>
+    </ul>
+  </div>
+
+
+<!-- Links -->
+<p class="fs-6">
+  Try the live <a href="https://streamcrypt.github.io/random-color-generator/" target="_blank" rel="noopener noreferrer" class="link-primary">Random Color Generator</a> or explore the 
+  <a href="https://github.com/streamcrypt/random-color-generator.git" target="_blank" rel="noopener noreferrer" class="link-primary">GitHub repository</a>.
+</p>
+</div>
+  </section>
+  </section>
+  <section id="experience" class="experience py-5 bg-light">
+  <div class="container">
+    <h3 class="mb-4 text-primary">Experience</h3>
+
+    <div class="experience-entry mb-5">
+      <h4 class="mb-2 text-secondary">New Horizons ICT Resource Center</h4>
+      <p class="mb-1"><strong>Role:</strong> IT Trainee</p>
+      <p class="mb-3"><strong>Duration:</strong> January 2024 – March 2024</p>
+      <ul class="ps-3">
+        <li>Completed training in Networking, Cybersecurity, and Ethical Hacking.</li>
+        <li>Worked on hands-on lab simulations using Cisco Packet Tracer and Wireshark.</li>
+        <li>Participated in group projects involving Windows server configuration and basic network security setup.</li>
+      </ul>
+    </div>
+
+    <div class="experience-entry mb-5">
+      <h4 class="mb-2 text-secondary">Freelance Web Developer</h4>
+      <p class="mb-1"><strong>Role:</strong> Web Designer / Developer</p>
+      <p class="mb-3"><strong>Duration:</strong> June 2023 – Present</p>
+      <ul class="ps-3">
+        <li>Designed and developed personal portfolios and landing pages using HTML, CSS, and Bootstrap.</li>
+        <li>Collaborated with clients to gather requirements and deliver tailored solutions.</li>
+        <li>Optimized sites for mobile responsiveness and SEO basics.</li>
+      </ul>
+    </div>
+
+    <div class="experience-entry mb-5">
+      <h4 class="mb-2 text-secondary">Computer Science Club, Bells University of Technology</h4>
+      <p class="mb-1"><strong>Role:</strong> Member & Project Contributor</p>
+      <p class="mb-3"><strong>Duration:</strong> 2022 – Present</p>
+      <ul class="ps-3">
+        <li>Contributed to development of a university event tracking web application.</li>
+        <li>Participated in hackathons and weekly coding challenges.</li>
+        <li>Assisted in organizing coding bootcamps for new members.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+<section id="contact" style="text-align: left;">
+  <div class="container">
+    <h3>Contact Us</h3>
+    <form action="https://formspree.io/f/xvgaqrvz" method="post">
+   <p> 
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" placeholder="Your Name" required />
+      </p>
+      <p>
+        <label for="email">Your Email:</label>
+      <input type="email" id="email" name="email" placeholder="Your Email" required />
+      </p>
+      <p>
+        <label for="message" >Your Message:</label>
+      <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+      </p>
+     <button type="submit" class="adjust-message">Send Message</button>
+     
+     
+      
+      
+    </form>
   </div>
 </section>
 
+</section>
 
-
-
-  <!-- Projects -->
-  <section id="projects" class="py-5 bg-dark text-white">
-    <div class="container text-center">
-      <h2 class="mb-4">Projects</h2>
-      <p>Project showcase coming soon...</p>
+<section id="footer"  style="background-color: black; color:white">
+  <footer>
+    <div style="text-align: center;">
+      <div id="date-time"></div>
     </div>
-  </section>
 
-  <!-- Contact -->
-  <section id="contact" class="py-5 bg-black text-white">
-    <div class="container text-center">
-      <h2 class="mb-4">Contact</h2>
-      <p>Email: email@example.com</p>
+    <p style="text-align: center;">&copy; 2025 Streamcrypt. All rights reserved.</p>
+
+    <div class="social-icons" style="text-align: center;">
+      <!-- Example social icon -->
+      <a href="#" class="me-2"><i class="fab fa-github fa-lg"></i></a>
+      <a href="#"><i class="fab fa-linkedin fa-lg"></i></a>
     </div>
-  </section>
+  </footer>
+</section>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"
+  integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOM8z4+2e5j7x1l5Z5l5z5l5Z5l5Z5l5Z5l5Z5"
+  crossorigin="anonymous"></script>
+
+<!-- Your JavaScript -->
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    // Smooth scroll
+    const links = document.querySelectorAll('a[href^="#"]');
+    for (let link of links) {
+      link.addEventListener('click', function (e) {
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    }
+
+    // Date/time update
+    function updateDateTime() {
+      const now = new Date();
+      const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+      const currentDate = now.toLocaleDateString('en-US', options);
+      const currentTime = now.toLocaleTimeString('en-US');
+
+      const dateTimeElement = document.getElementById('date-time');
+      if (dateTimeElement) {
+        dateTimeElement.innerHTML = `<strong>Date:</strong> ${currentDate} <br> <strong>Time:</strong> ${currentTime}`;
+      }
+    }
+
+    setInterval(updateDateTime, 1000);
+    updateDateTime();
+  });
+</script>
